@@ -181,6 +181,15 @@ class Conditional extends Object {
     controller.callMethod(
       'A Super Long String That Will Break The Outer Parent And Lead To Complicated Result'
     );
+    VeryLongOuterClassName.VeryLongInnerClassName variableName = anotherVariable.veryLongPropertyMember.get(accountId);
+    a = b.c().d('first param', 'second param', 'thirdParam', 'fourthParam', 'fifthParam', 'sixthParam');
+    VeryLongOuterClassName.VeryLongInnerClassName variableName = anotherVariable.veryLongPropertyMember.get(veryLongVariableNameThatWillSurelyBreakTheLineOnItsOwnWithoutAnyOtherElementAffectingIt);
+    VeryLongOuterClassName.VeryLongInnerClassName variableName = anotherVariable
+      .veryLongPropertyMember
+      .get(
+        accountId
+      );
+    variableName.propertyMember.get('Name').status = variableName.propertyOptions[0].getValue();
   }
 
   void javaMethodCallExpression_notNeeded() {}
